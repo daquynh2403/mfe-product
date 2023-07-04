@@ -13,7 +13,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "webpack serve"
+    "dev": "webpack serve",
+    "build": "webpack build"
   },
   "eslintConfig": {
     "extends": [

@@ -51,7 +51,7 @@ export const App = () => {
                 </div>
                 <div className="mt-4 flex justify-between">
                   <div>
-                    <h3 className="text-sm text-gray-700">
+                    <h3 className="text-sm text-gray-900">
                       <a href="#">
                         <span aria-hidden="true" className="absolute inset-0" />
                         {product.title}

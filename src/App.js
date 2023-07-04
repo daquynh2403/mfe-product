@@ -16,6 +16,7 @@ import axios from "axios";
 //   const result = await getSessionToken()
 //   return result.item.sessionKey
 // }
+
 export const App = () => {
   const [prod, setProd] = useState()
   
@@ -26,6 +27,7 @@ export const App = () => {
       baseURL: 'http://localhost:8080/svc/mfeProductApi',
       headers: {
         'Authorization': 'Bearer' + token,
+        'Access-Control-Allow-Origin': '*',
       }
     }
     await axios.get('/list?_siteId=brand', config).then(res => setProd(res.data)).catch(console.log)

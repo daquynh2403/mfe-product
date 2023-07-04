@@ -4,7 +4,9 @@ const path = require("path");
 const { dependencies } = require("./package.json");
 
 module.exports = {
-  entry: "./src/index",
+  entry: {
+    products: "./src/index"
+  },
   mode: "development",
   devServer: {
     static: {
@@ -34,7 +36,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "Products",
+      name: "products",
       filename: "remoteEntry.js",
       exposes: {
         "./App": "./src/App",

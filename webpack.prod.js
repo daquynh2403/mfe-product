@@ -14,7 +14,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
       name: "products",
       filename: "remoteEntry.js",
       exposes: {
-        "./App": "./src/App",
+        "./App": "./src/bootstrap",
       },
       shared: packageJson.dependencies,
     }),

@@ -21,7 +21,7 @@ const packageJson = require("./package.json");
       name: "products",
       filename: "remoteEntry.js",
       exposes: {
-        "./App": "./src/App",
+        "./App": "./src/bootstrap",
       },
       shared: packageJson.dependencies,
     }),
